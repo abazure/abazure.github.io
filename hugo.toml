@@ -1,0 +1,9 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Project'
+theme = 'mana'
+
+[params.social]
+  github = "https://github.com/abazure"
+  linkedin = "https://www.linkedin.com/in/roni-ragil-iman-khoirul"
+  email = "roniragil11@example.com"
