@@ -1,11 +1,62 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://abazure.github.io/'
 languageCode = 'en-us'
 title = 'My New Hugo Project'
 theme = 'mana'
 
+[params]
+  favicon = "favicon/favicon.ico"
 [params.social]
   github = "https://github.com/abazure"
   linkedin = "https://www.linkedin.com/in/roni-ragil-iman-khoirul"
   email = "roniragil11@example.com"
+[params.avatar]
+  [params.avatar.home]
+    assetPath = "home-avatar.png"
+  [params.avatar.about]
+    assetPath = "images/logo.png"
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
 
+defaultContentLanguage = "id"
 
+[languages.en]
+  languageCode = "en-US"
+  languageName = "English"
+  languageDirection = "ltr"
+  contentDir = "content/en"
+  weight = 1
+  title = "Abazure.dev"
+  [languages.en.params]
+    description = "Notes, ideas, and reflections gathered along the way."
+    author = "Roni Ragil Iman Khoirul"
+    heroTitleLine1 = "Abazure.dev"
+    heroTitleLine2 = "Fragments from the journey"
+    custom404Message = "Sorry, the page you are looking for could not be found."
+    # footerText = "© Abazure.dev 2026"
+  [[languages.en.menus.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 10
+  # ... other menu items
+
+[languages.id]
+  languageCode = "id-ID"
+  languageName = "Indonesia"
+  languageDirection = "ltr"
+  contentDir = "content/id"
+  weight = 2
+  title = "Abazure.dev"
+
+  [languages.id.params]
+    description = "Catatan, ide, dan refleksi yang terkumpul sepanjang perjalanan."
+    author = "Roni Ragil Iman Khoirul"
+    heroTitleLine1 = "Abazure.dev"
+    heroTitleLine2 = "Fragmen dari sebuah perjalanan"
+    custom404Message = "Halaman yang kamu cari tidak dapat ditemukan."
+    # footerText = "© Abazure.dev 2026"
+
+  [[languages.id.menus.main]]
+    name = "Beranda"
+    pageRef = "/"
+    weight = 10
