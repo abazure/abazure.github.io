@@ -1,7 +1,7 @@
 ---
 title: "Mengenal Struktur Direktori Standar Linux"
 date: 2026-05-07
-tags: ["linux"]
+tags: ["linux", "sysadmin"]
 image: "linuxdir.webp"
 description: "Linux menggunakan Filesystem Hierarchy Standard (FHS) sebagai standar struktur direktorinya"
 ---
