@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" data-theme="dark">
+<head>
+    <title>{{ .Title }}</title>
+    {{ partial "head.html" . }}
+    {{ with resources.Get "css/custom.css" }}
+      {{ with . | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+      {{ end }}
+    {{ end }}
+</head>
+
+<body>
+{{ if not .IsPage }}
+  {{ partial "header.html" . }}
+{{ end }}
+<main>
+  {{ block "main" . }}
+  {{ end }}
+</main>
+{{ partial "footer.html" . }}
+</body>
+</html>

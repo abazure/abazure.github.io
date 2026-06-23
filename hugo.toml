@@ -1,69 +1,64 @@
 baseURL = 'https://abazure.github.io/'
-theme = 'mana'
+title = 'Abazure.dev'
+theme = 'chicago7'
 
-# SETEL INI KE "id"
-defaultContentLanguage = "id"
-[markup.goldmark.renderer]
-unsafe = true
+# Situs berbahasa Indonesia
+defaultContentLanguage = 'id'
 
+[languages.id]
+  locale = 'id-ID'
+  label = 'Indonesia'
+  weight = 1
+
+pagination.pagerSize = 10
+
+[permalinks]
+  posts = '/posts/:slug/'
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    style = 'bw'
+
+# ---------------------------------------------------------
+# MENU NAVIGASI
+# ---------------------------------------------------------
+[menu]
+  [[menu.header]]
+    name = 'Home'
+    url = '/'
+    weight = 10
+
+  [[menu.header]]
+    name = 'Posts'
+    url = 'posts'
+    weight = 20
+
+  [[menu.header]]
+    name = 'Projects'
+    url = 'projects'
+    weight = 30
+
+  [[menu.header]]
+    name = 'About'
+    url = 'about'
+    weight = 40
+
+# ---------------------------------------------------------
+# PARAMETER SITUS
+# ---------------------------------------------------------
 [params]
-  favicon = "favicon/favicon.ico"
-  author = "Roni Ragil Iman Khoirul"
+  author = 'Roni Ragil Iman Khoirul'
+  subtitle = 'Sederet catatan, ide, dan refleksi di tiap langkah kaki.'
+  keywords = 'linux, sysadmin, catatan, teknologi'
+  logo = 'logo.png'
+  favicon = 'favicon/favicon.ico'
 
 [params.social]
-  github = "https://github.com/abazure"
-  linkedin = "https://www.linkedin.com/in/roni-ragil-iman-khoirul"
-  email = "roniragil11@example.com"
-
-[params.avatar]
-  [params.avatar.home]
-    assetPath = "home-avatar.png"
-  [params.avatar.about]
-    assetPath = "images/logo.png"
+  github = 'https://github.com/abazure'
+  linkedin = 'https://www.linkedin.com/in/roni-ragil-iman-khoirul'
+  feed = '/index.xml'
 
 [outputs]
-  home = ["HTML", "JSON"]
-
-# ---------------------------------------------------------
-# KONFIGURASI BAHASA INDONESIA (UTAMA)
-# ---------------------------------------------------------
-[languages.id]
-  locale = "id-ID"
-  label = "Indonesia"
-  # contentDir = "content/id"
-  weight = 1  # Berikan weight terkecil agar jadi prioritas
-  title = "Abazure.dev"
-
-  [languages.id.params]
-    description = "Sederet catatan, ide, dan refleksi di tiap langkah kaki."
-    author = "Roni Ragil Iman Khoirul"
-    heroTitleLine1 = "Abazure.dev"
-    heroTitleLine2 = "Fragmen Perjalanan"
-    custom404Message = "Maaf, halaman yang Anda cari tidak ditemukan."
-
-  [[languages.id.menus.main]]
-    name = "Beranda"
-    pageRef = "/"
-    weight = 10
-
-# ---------------------------------------------------------
-# KONFIGURASI BAHASA INGGRIS (KEDUA)
-# ---------------------------------------------------------
-[languages.en]
-  locale = "en-US"
-  label = "English"
-  # contentDir = "content/en"
-  weight = 2  # Weight lebih besar dari "id"
-  title = "Abazure.dev"
-
-  [languages.en.params]
-    description = "Notes, ideas, and reflections gathered along the way."
-    author = "Roni Ragil Iman Khoirul"
-    heroTitleLine1 = "Abazure.dev"
-    heroTitleLine2 = "Fragments from the journey"
-    custom404Message = "Sorry, the page you are looking for could not be found."
-
-  [[languages.en.menus.main]]
-    name = "Home"
-    pageRef = "/"
-    weight = 10
+  home = ['HTML', 'RSS']

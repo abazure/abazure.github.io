@@ -1,0 +1,81 @@
+/* ------------------------------------------------------------------ */
+/* Post search input                                                   */
+/* ------------------------------------------------------------------ */
+#post-search {
+  display: block;
+  width: 100%;
+  max-width: 22rem;
+  height: auto;
+  margin: 0 0 1.75rem;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.95rem;
+  border-radius: 8px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Projects list — card grid                                           */
+/* ------------------------------------------------------------------ */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 1.15rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1.35rem;
+  border: 1px solid var(--pico-muted-border-color);
+  border-radius: 14px;
+  background: var(--pico-card-background-color, var(--pico-background-color));
+  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--pico-color);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
+}
+
+/* Title — bright, bold, prominent */
+.project-card__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.project-card__title a {
+  color: var(--pico-color);
+  text-decoration: none;
+}
+
+.project-card:hover .project-card__title a {
+  text-decoration: underline;
+}
+
+/* Description — muted, smaller, clearly secondary */
+.project-card__desc {
+  margin: 0;
+  color: var(--pico-muted-color);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+/* "Read more" hint */
+.project-card__more {
+  margin-top: auto;
+  padding-top: 0.9rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.project-card:hover .project-card__more {
+  opacity: 0.85;
+  transform: translateX(0);
+}

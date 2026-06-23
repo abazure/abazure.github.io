@@ -2,7 +2,7 @@
 title: "Mengenal Struktur Direktori Standar Linux"
 date: 2026-05-07
 tags: ["linux", "sysadmin"]
-image: "linuxdir.webp"
+cover: "linuxdir.webp"
 description: "Linux menggunakan Filesystem Hierarchy Standard (FHS) sebagai standar struktur direktorinya"
 ---
 
@@ -30,7 +30,7 @@ Sebagian besar distribusi Linux seperti Ubuntu, Debian, Fedora, Arch Linux, dan 
 ## Struktur Direktori Utama Linux
 Berikut adalah direktori-direktori penting yang umum ditemukan pada sistem Linux.
 
-![Linux Tree Directories](output.webp)
+![Struktur Direktori Linux](image.webp)
 
 | Direktori | Fungsi |
 |---|---|

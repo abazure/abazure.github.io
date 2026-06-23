@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section>
+    <header>
+      <h1>{{ .Title }}</h1>
+    </header>
+
+    {{ with .Content }}
+        {{- . -}}
+    {{ end }}
+
+    <div class="project-grid">
+    {{ range .Paginator.Pages }}
+      <article class="project-card">
+        <h3 class="project-card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        {{ with .Description }}<p class="project-card__desc">{{ . }}</p>{{ end }}
+        <span class="project-card__more">Lihat selengkapnya &rarr;</span>
+      </article>
+    {{ end }}
+    </div>
+
+    {{ partial "pagination.html" . }}
+
+</section>
+{{ end }}

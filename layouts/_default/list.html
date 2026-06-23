@@ -1,0 +1,54 @@
+{{ define "main" }}
+<section>
+    <header>
+      <h1>{{ .Title }}</h1>
+      <p class="meta">You can also filter by <a href="{{ "tags" | relURL }}" class="button">tags</a></p>
+    </header>
+
+    {{ with .Content }}
+        {{- . -}}
+    {{ end }}
+
+    {{ if eq .Kind "section" }}
+    <input type="search" id="post-search" placeholder="Search posts..." aria-label="Search posts" autocomplete="off">
+    {{ end }}
+
+    <section class="grid posts" id="post-list">
+    {{ range .Paginator.Pages }}
+        <time datetime="{{ .Date.Format "2006-01-02" }}" class="meta">{{ .Date.Format "Jan 02, 2006" }}</time>
+        <a href="{{ .RelPermalink }}" data-search="{{ lower (printf "%s %s %s" .Title (delimit .Params.tags " ") .Description) }}">{{ .Title }}</a>
+    {{end}}
+    </section>
+
+    {{ if eq .Kind "section" }}
+    <p id="post-search-empty" class="meta" hidden>No posts found.</p>
+    {{ end }}
+
+    {{ partial "pagination.html" . }}
+
+</section>
+
+{{ if eq .Kind "section" }}
+<script>
+(function () {
+  var input = document.getElementById('post-search');
+  if (!input) return;
+  var list = document.getElementById('post-list');
+  var empty = document.getElementById('post-search-empty');
+  var links = Array.prototype.slice.call(list.querySelectorAll('a[data-search]'));
+  input.addEventListener('input', function () {
+    var q = input.value.trim().toLowerCase();
+    var visible = 0;
+    links.forEach(function (a) {
+      var match = !q || a.getAttribute('data-search').indexOf(q) !== -1;
+      a.style.display = match ? '' : 'none';
+      var time = a.previousElementSibling;
+      if (time && time.tagName === 'TIME') { time.style.display = match ? '' : 'none'; }
+      if (match) visible++;
+    });
+    if (empty) empty.hidden = visible !== 0;
+  });
+})();
+</script>
+{{ end }}
+{{ end }}

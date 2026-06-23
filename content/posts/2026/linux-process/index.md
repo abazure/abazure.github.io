@@ -2,7 +2,7 @@
 title: "Mengenal Apa Itu Proses di Linux"
 date: 2026-05-10
 tags: ["linux", "sysadmin"]
-image: "linux-process.webp"
+cover: "linux-process.webp"
 description: "Pernah dengar istilah PID ? Memahami cara kerja proses di dalam sistem Linux!"
 ---
 
