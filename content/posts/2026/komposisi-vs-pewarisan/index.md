@@ -1,6 +1,6 @@
 ---
 title: "Kenapa Composition Lebih Disukai daripada Inheritance Dalam OOP?"
-date: 2026-06-23
+date: 2026-06-30
 tags: ["java", "oop"]
 description: "Dalam OOP ada prinsip terkenal: composition over inheritance. Kenapa komposisi sering lebih disukai daripada pewarisan? Mari kita bahas dengan sederhana."
 ---
