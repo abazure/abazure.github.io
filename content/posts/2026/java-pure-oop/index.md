@@ -12,7 +12,7 @@ banyak yang mengira Java adalah bahasa berorientasi objek **murni** (*pure
 OOP*). Padahal kenyataannya: **Java bukan bahasa OOP murni.**
 
 Apa maksudnya "murni"? Sebuah bahasa disebut OOP murni jika **segala sesuatunya
-adalah objek** — bahkan angka sekalipun — dan semua operasi dilakukan lewat
+adalah objek**, bahkan angka sekalipun, dan semua operasi dilakukan lewat
 _method_ pada objek. Java tidak sepenuhnya seperti itu.
 
 Mari kita lihat alasan-alasannya.
@@ -20,7 +20,7 @@ Mari kita lihat alasan-alasannya.
 ## 1. Ada Tipe Primitif yang Bukan Objek
 
 Java punya **tipe primitif** seperti `int`, `boolean`, `char`, dan `double`.
-Nilai-nilai ini **bukan objek** — mereka disimpan langsung sebagai data mentah,
+Nilai-nilai ini **bukan objek**, melainkan disimpan langsung sebagai data mentah,
 bukan sebagai instance dari sebuah *class*.
 
 ```java

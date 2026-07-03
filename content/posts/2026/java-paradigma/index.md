@@ -9,7 +9,7 @@ description: "Java bukan cuma bahasa berorientasi objek. Kenali enam paradigma p
 
 Saat orang mendengar kata **Java**, biasanya yang langsung terbayang adalah
 *Object-Oriented Programming* (OOP). Padahal, Java sebenarnya adalah bahasa yang
-bersifat **multi-paradigma** — artinya Java mendukung beberapa gaya menulis
+bersifat **multi-paradigma**, artinya Java mendukung beberapa gaya menulis
 program sekaligus.
 
 **Paradigma pemrograman** sendiri adalah "cara pandang" atau gaya dalam menyusun
@@ -101,7 +101,7 @@ thread.start();
 ## 5. Functional Programming
 
 Mulai **Java 8**, Java mendukung **pemrograman fungsional**. Di sini kita
-memperlakukan fungsi sebagai "warga kelas satu" — bisa disimpan dan dioper seperti
+memperlakukan fungsi sebagai "warga kelas satu", bisa disimpan dan dioper seperti
 data biasa. Fiturnya antara lain *lambda expression*, *Stream API*, dan
 *functional interface*.
 
@@ -148,8 +148,8 @@ names.add("Alice");
 ## Kesimpulan
 
 Java sering dikenal sebagai bahasa OOP, padahal kemampuannya jauh lebih luas.
-Dengan mendukung enam paradigma sekaligus — OOP, imperatif, prosedural, konkuren,
-fungsional, dan generik — Java memberi kita kebebasan memilih gaya yang paling
+Dengan mendukung enam paradigma sekaligus, yaitu OOP, imperatif, prosedural, konkuren,
+fungsional, dan generik, Java memberi kita kebebasan memilih gaya yang paling
 cocok untuk setiap masalah.
 
 Memahami berbagai paradigma ini membuat kita menjadi *programmer* yang lebih

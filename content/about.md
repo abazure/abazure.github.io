@@ -5,14 +5,17 @@ description = "Tentang Abazure.dev dan penulisnya."
 author = "Roni Ragil Iman Khoirul"
 +++
 
-Halo! Saya **Roni Ragil Iman Khoirul**, penulis di balik Abazure.dev.
+<div align="center">
+  <img src="assets/about.jpg"
+       alt="Roni Ragil Iman Khoirul"
+       width="180"
+       style="border-radius: 50%;">
+</div>
 
-Blog ini saya gunakan untuk mendokumentasikan perjalanan belajar saya di bidang
-Linux, administrasi sistem, dan teknologi secara umum. Setiap tulisan berusaha
-saya sampaikan dengan bahasa yang sederhana agar mudah dipahami siapa saja,
-termasuk yang baru memulai.
+Halo! Saya **Roni Ragil Iman Khoirul**, penulis di balik **Abazure.dev**.
 
-Kalau ada yang ingin didiskusikan, jangan ragu menghubungi saya lewat tautan
-di bagian bawah halaman.
+Saat ini saya berfokus pada **backend development**, khususnya menggunakan **Java** dan ekosistem di sekitarnya.
 
-Terima kasih sudah berkunjung!
+Blog ini berisi catatan belajar, eksperimen, dan berbagai pengalaman *troubleshooting* yang saya temui sehari-hari.
+
+Terima kasih sudah berkunjung.

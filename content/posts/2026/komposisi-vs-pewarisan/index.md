@@ -11,8 +11,8 @@ Dalam pemrograman berorientasi objek (OOP), ada dua cara umum untuk menggunakan
 kembali kode dari satu *class* di *class* lain: **pewarisan** (*inheritance*) dan
 **komposisi** (*composition*).
 
-Ada satu prinsip desain yang sangat terkenal: **"composition over inheritance"**
-— utamakan komposisi daripada pewarisan. Kenapa begitu? Mari kita pahami dulu
+Ada satu prinsip desain yang sangat terkenal: **"composition over inheritance"**,
+yaitu mengutamakan komposisi daripada pewarisan. Kenapa begitu? Mari kita pahami dulu
 perbedaan keduanya.
 
 ## Pewarisan: Hubungan "adalah" (is-a)
@@ -38,7 +38,7 @@ class Cat extends Animal {   // Cat "is-a" Animal
 ```
 
 Masalah muncul ketika orang memaksakan pewarisan padahal hubungannya tidak benar.
-Contohnya `Car extends Engine` — padahal mobil **bukan** mesin, melainkan
+Contohnya `Car extends Engine`, padahal mobil **bukan** mesin, melainkan
 **punya** mesin.
 
 ## Komposisi: Hubungan "punya" (has-a)
@@ -48,7 +48,7 @@ di dalamnya. Mobil **punya** mesin, jadi objek `Engine` diletakkan di dalam
 `Car`.
 
 > **Analogi:** Sebuah komputer "punya" prosesor, RAM, dan SSD. Komputer tidak
-> "mewarisi" prosesor — ia merakitnya dari komponen-komponen itu.
+> "mewarisi" prosesor, melainkan merakitnya dari komponen-komponen itu.
 
 ```java
 class Engine {
@@ -113,7 +113,7 @@ itu bekerja di dalamnya.
 ### 3. Menghindari Masalah Pewarisan
 
 Pewarisan yang berlapis-lapis bisa menimbulkan masalah, salah satunya **diamond
-problem** — kebingungan ketika sebuah *class* mewarisi dari dua "induk" yang
+problem**, yaitu kebingungan ketika sebuah *class* mewarisi dari dua "induk" yang
 punya metode sama. Java bahkan **melarang** pewarisan banyak *class* sekaligus
 untuk menghindari ini. Komposisi tidak punya masalah seperti itu.
 
@@ -147,7 +147,7 @@ aman dibanding pewarisan yang saling terikat erat.
 
 ## Kesimpulan
 
-Pewarisan bukanlah sesuatu yang buruk — ia tetap berguna saat hubungan
+Pewarisan bukanlah sesuatu yang buruk, ia tetap berguna saat hubungan
 **"is-a"** benar-benar tepat. Namun untuk kebanyakan kasus, **komposisi** memberi
 desain yang lebih fleksibel, longgar, dan mudah dirawat.
 
